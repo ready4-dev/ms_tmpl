@@ -69,10 +69,7 @@ output:
       - '--lua-filter=../Filters/author-info-blocks.lua'
       - '--lua-filter=../Filters/pagebreaks.lua'
 params:
-  figures_in_body_lgl: !r F
-  results_ls: NULL
-  output_type_1L_chr: Word
-  tables_in_body_lgl: !r F
+  X: NULL
 abstract: "`r paste0(stringr::str_replace_all(stringr::str_replace_all(stringr::str_replace_all(stringr::str_replace_all(readLines('../Header/abstract.txt'),'\\\\\\\\textbf',''),'\\{','**'),'\\}','**'),'\\\\\\\\newline','\\\\n'),collapse=' ')`"
 graphics: yes
 csl: plos.csl
@@ -80,6 +77,7 @@ csl: plos.csl
 
 ```{r echo = F}
 library(officedown)
+library(ready4show)
 ```
 ```{r child="../Child_RMDs/All_Content.Rmd", echo=FALSE}
 ```

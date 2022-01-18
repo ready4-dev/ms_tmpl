@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r echo=FALSE}
-if(params$figures_in_body_lgl){
+if(params$X@figures_in_body_lgl){
   child_figs_ls <- list(fig1 = "../Child_RMDs/MS_Figures_1.RMD",
                       fig2 = "../Child_RMDs/MS_Figures_2.RMD")
 }else{

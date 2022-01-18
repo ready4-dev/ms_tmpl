@@ -6,18 +6,14 @@ output: html_document
 ---
 <!-- Add child RMDs for methods content -->
 ## Sample and setting
- 
+`r ifelse(is.na(params$X@sample_desc_1L_chr),"",params$X@sample_desc_1L_chr)`  
 
 ## Measures
 
-
-
 ### Population characteristics
-
 
 ## Procedures
 
 ## Statistical analysis
-
 
 ### Replicability

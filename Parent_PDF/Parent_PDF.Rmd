@@ -17,11 +17,9 @@ output:
       - '--lua-filter=../Filters/scholarly-metadata.lua'
       - '--lua-filter=../Filters/author-info-blocks.lua'
     toc: no
+## CUSTOM_AUTHORS_PLACEHOLDER ##
 params:
-  figures_in_body_lgl: !r T
-  output_type_1L_chr: PDF
-  results_ls: NULL
-  tables_in_body_lgl: !r T
+  X: NULL
 abstract: "`r paste0(readLines('../Header/abstract.txt'),collapse=' ')`"
 graphics: yes
 csl: plos.csl
@@ -30,6 +28,7 @@ csl: plos.csl
 ```{r echo = F}
 ## NOTE: EDITED TEMPLATE FILE To Add rotating and multirow packages as per:
 # https://stackoverflow.com/questions/31503418/how-to-add-a-latex-package-to-r-journal-template-from-rticle-package-in-r
+library(ready4show)
 options(tinytex.verbose = TRUE)
 library(xtable)
 options(xtable.floating = FALSE)
